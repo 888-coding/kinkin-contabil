@@ -20,3 +20,9 @@ Funcionará via terminal , pelo Python
 - Não será Orienta a Objeto.
 - Tem que ter sistema de login de usuário.
 
+### Dúvidas
+
+* Qual banco treinar? SQLite ou PostgreSQL ?
+* Sistema de Login
+* Criptografia na senha 
+
