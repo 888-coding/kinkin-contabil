@@ -18,5 +18,5 @@ Funcionará via terminal , pelo Python
 - Verificar se precisa ter multi-frontend.
 - Verificar se precisa de acesso via browsers de Internet.
 - Não será Orienta a Objeto.
-
+- Tem que ter sistema de login de usuário.
 
