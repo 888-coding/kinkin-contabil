@@ -26,3 +26,8 @@ Funcionará via terminal , pelo Python
 * Sistema de Login
 * Criptografia na senha 
 
+## Qual será a função do Sistema Kinkin Contabilidade ?
+
+* Sistema de calculo e relatorios para análise de Lucro da empresa. 
+* Sistema KinKin será com sistema de balanceamento de Débito e Crédito.  Estudado no curso de contabilidade. 
+
