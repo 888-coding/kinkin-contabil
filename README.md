@@ -29,5 +29,6 @@ Funcionará via terminal , pelo Python
 ## Qual será a função do Sistema Kinkin Contabilidade ?
 
 * Sistema de calculo e relatorios para análise de Lucro da empresa. 
-* Sistema KinKin será com sistema de balanceamento de Débito e Crédito.  Estudado no curso de contabilidade. 
+* Sistema KinKin é um sistema de balanceamento de Débito e Crédito.  Conhecido também como "Balancete T", ou "Balancete de verificação".
+
 
