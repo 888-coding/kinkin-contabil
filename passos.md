@@ -5,15 +5,34 @@
 Nome do banco de dados : "contabilidade.db".
 
 
-## Criação de tabela usuarios 
+### Criação de tabela usuarios 
 
-Necessidade de ID, Nome, Senha.
+* Necessidade de ID, Nome, Senha.
 
-## Criação de tabela de Contas
+* Terá CRUD.
 
-## Criação de tabela de Movimentos
+### Criação de tabela de Contas
+
+* Será onde ficará as contas que será usado.
+
+* Possívelmente, Não se deve deletar a conta, mas sim a função de Desativar. 
+
+### Criação de tabela de Movimentos
+
+Aqui será os lançamentos. 
+
+* Terá CRUD.
+
+## Relatórios 
+
+* Os relatórios penso em criar em PDF. 
+
+## Consultas 
+
+* Pode ser consultado sem gerar relatório. 
+
 
 
 ## Aprender Docker ?
 * Sim : Vai ser preciso para treinar.
-* Não : Desfocando assunto.
+* Não : Atrapalha o andamento do estudo.
