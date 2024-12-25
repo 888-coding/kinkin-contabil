@@ -21,9 +21,21 @@ if os.path.exists(nome_arquivo):
         print("A tabela não existe")
         cursor = conexao.cursor()
         cursor.execute("CREATE TABLE usuarios (id integer, nome text, senha text)")
-        cursor.close()    
+        cursor.close()
+        print("Foi criado a tabela usuarios neste momento.")    
     else:
         print("A tabela usuarios já existe!") 
+
+    cursor = conexao.cursor()
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='contas'")
+    resultado = cursor.fetchone()
+    cursor.close()
+
+    if resultado == None:
+        print("Não tem tabela contas")
+    else:
+        print("Tabela contas já existe!")
+    
 else: 
     print("O banco de dados não existe! ")
 
