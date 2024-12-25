@@ -15,6 +15,8 @@ Nome do banco de dados : "contabilidade.db".
 
 * Será onde ficará as contas que será usado.
 
+* ID, conta_base, conta_complementar, descricao
+
 * Possívelmente, Não se deve deletar a conta, mas sim a função de Desativar. 
 
 ### Criação de tabela de Movimentos
