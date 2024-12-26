@@ -43,6 +43,20 @@ if os.path.exists(nome_arquivo):
     else:
         print("Tabela contas já existe!")
     
+    # EXISTENCIA TABELA DE MOVIMENTACOES 
+    cursor = conexao.cursor()
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='movimentacoes'")
+    resultado = cursor.fetchone()
+    cursor.close()
+
+    if resultado == None:
+        print("Não existe tabela movimentações.")
+        cursor = conexao.cursor()
+        cursor.execute("CREATE TABLE movimentacoes (movimentacao_id integer, movimentacao_group integer, movimentacao_date integer, movimentacao_valor real, movimentacao_descricao text, conta_id integer, movimentacao_tipo text)")
+        cursor.close()
+        print("Foi criada com sucesso a tabela movimentações.")
+    else:
+        print("A tabela movimentações já existe!")
 else: 
     print("O banco de dados não existe! ")
 
