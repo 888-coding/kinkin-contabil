@@ -52,7 +52,7 @@ if os.path.exists(nome_arquivo):
     if resultado == None:
         print("Não existe tabela movimentações.")
         cursor = conexao.cursor()
-        cursor.execute("CREATE TABLE movimentacoes (movimentacao_id integer, movimentacao_group integer, movimentacao_date integer, movimentacao_valor real, movimentacao_descricao text, conta_id integer, movimentacao_tipo text)")
+        cursor.execute("CREATE TABLE movimentacoes (movimentacao_id integer, movimentacao_group integer, movimentacao_date integer, movimentacao_valor integer, movimentacao_descricao text, conta_id integer, movimentacao_tipo text)")
         cursor.close()
         print("Foi criada com sucesso a tabela movimentações.")
     else:
