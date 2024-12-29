@@ -14,5 +14,7 @@ while True:
         if int(opcao_menu) < 4 and int(opcao_menu) > 0 :
             opcao_menu = int(opcao_menu)
             break
+        else:
+            print("Escolha a opção certa: ")
     else:
-        print("Não digitou certo!")
+        print("Escolha a opção certa: ")
