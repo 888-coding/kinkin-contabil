@@ -22,4 +22,5 @@ def main():
             print("Escolha a opção certa: ")
 
     print(f"A Opção escolhida foi : {opcao_menu}")
+
 main()
