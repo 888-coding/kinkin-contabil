@@ -17,10 +17,19 @@ def main():
                 opcao_menu = int(opcao_menu)
                 break
             else:
-                print("Escolha a opção certa: ")
+                print("obs: Escolha a opção certa")
         else:
-            print("Escolha a opção certa: ")
+            print("obs: Escolha a opção certa")
 
-    print(f"A Opção escolhida foi : {opcao_menu}")
+    if opcao_menu == 1:
+        print(f"Você escolheu a opção {opcao_menu}")
+        acessarContas()
+    elif opcao_menu == 2:
+        print(f"Você escolheu a opção {opcao_menu}")
+    else:
+        print(f"Você escolheu a opção {opcao_menu}")
+    
+def acessarContas():
+    print("Você está dentro da função acessarConta!")
 
 main()
