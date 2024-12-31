@@ -1,0 +1,1 @@
+bancodados_nome = "contabilidade.py"

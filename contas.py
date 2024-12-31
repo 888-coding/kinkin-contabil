@@ -1,4 +1,6 @@
 # contas.py
+import sqlite3 as s
+from conexao import bancodados_nome 
 
 def acessarContas():
     print("= = = CONTAS = = =")
@@ -21,6 +23,9 @@ def acessarContas():
     # Escolheu uma opção 
     if opcao_menu_contas == 1:
         print("Escolheu cadastra uma conta")
+        conexao = s.connect(bancodados_nome)
+        cursor = conexao.cursor()
+        
     elif opcao_menu_contas == 2:
         print("Escolheu mostrar todas as contas")
     else:
