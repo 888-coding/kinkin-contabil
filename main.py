@@ -2,6 +2,9 @@
 
 
 def main():
+    mostrarMenu()
+
+def mostrarMenu():
     print("====== SISTEMA KINKIN CONTÁBIL =====")
     print("====================================")
     print("MENU DO SISTEMA : ------------------")
@@ -9,7 +12,6 @@ def main():
     print("2 - ACESSAR MOVIMENTAÇÕES ")
     print("3 - ACESSAR RELATÓRIOS ")
     print("====================================")
-
     while True:
         opcao_menu = input("> Escolha uma opção no menu: ")
         if opcao_menu.isdigit():
@@ -28,7 +30,7 @@ def main():
         print(f"Você escolheu a opção {opcao_menu}")
     else:
         print(f"Você escolheu a opção {opcao_menu}")
-    
+
 def acessarContas():
     print("Você está dentro da função acessarConta!")
 
