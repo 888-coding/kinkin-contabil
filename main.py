@@ -1,5 +1,5 @@
 # main.py 
-
+import contas
 
 def main():
     mostrarMenu()
@@ -25,7 +25,7 @@ def mostrarMenu():
 
     if opcao_menu == 1:
         print(f"Você escolheu a opção {opcao_menu}")
-        acessarContas()
+        contas.acessarContas()
     elif opcao_menu == 2:
         print(f"Você escolheu a opção {opcao_menu}")
     else:
