@@ -26,7 +26,7 @@ if os.path.exists(nome_arquivo):
         cursor.close()
         print("Foi criado a tabela usuarios neste momento.")    
     else:
-        print("A tabela usuarios já existe!") 
+        print("A tabela >usuarios já existe!") 
 
     # EXISTÊNCIA DA TABELA CONTAS 
     cursor = conexao.cursor()
@@ -41,7 +41,7 @@ if os.path.exists(nome_arquivo):
         cursor.close()
         print("Foi criado a tabela contas neste momento.")
     else:
-        print("Tabela contas já existe!")
+        print("A tabela >contas já existe!")
     
     # EXISTENCIA TABELA DE MOVIMENTACOES 
     cursor = conexao.cursor()
@@ -56,7 +56,7 @@ if os.path.exists(nome_arquivo):
         cursor.close()
         print("Foi criada com sucesso a tabela movimentações.")
     else:
-        print("A tabela movimentações já existe!")
+        print("A tabela >movimentações já existe!")
 else: 
     print("O banco de dados não existe! ")
 

@@ -3,12 +3,12 @@ import sqlite3 as s
 from conexao import bancodados_nome 
 
 def acessarContas():
-    print("= = = CONTAS = = =")
-    print("MENU : = = = = = =")
+    print("========== CONTAS =========")
+    print("===========================")
     print("1. Cadastrar uma conta.")
     print("2. Mostrar todas as contas.")
     print("3. Atualizar uma conta.")
-    print("- - - - - - - - - - ")
+    print("===========================")
     while True:
         opcao_menu_contas = input("> Escolha uma opção : ")
         if opcao_menu_contas.isdigit():
@@ -23,11 +23,20 @@ def acessarContas():
     # Escolheu uma opção 
     if opcao_menu_contas == 1:
         print("Escolheu cadastra uma conta")
-        conexao = s.connect(bancodados_nome)
-        cursor = conexao.cursor()
-        
+                    
     elif opcao_menu_contas == 2:
         print("Escolheu mostrar todas as contas")
+        conexao = s.connect(bancodados_nome)
+        cursor = conexao.cursor()
+        cursor.execute("SELECT * FROM contas")
+        resultados = cursor.fetchall()
+        if resultados == None:
+            print("Não existe cadastro.")
+        else:
+            print(resultados)
+        conexao.close()
+
+        #print(resultados)        
     else:
         print("Escolheu atualizar uma conta")
     
