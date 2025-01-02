@@ -37,7 +37,7 @@ if os.path.exists(nome_arquivo):
     if resultado == None:
         print("Não tem tabela contas")
         cursor = conexao.cursor()
-        cursor.execute("CREATE TABLE contas (contas_id integer PRIMARY KEY AUTOINCREMENT, conta_base text, conta_complementar text, conta_descricao text)")
+        cursor.execute("CREATE TABLE contas (conta_id integer PRIMARY KEY AUTOINCREMENT, conta_base text, conta_complementar text, conta_descricao text)")
         cursor.close()
         print("Foi criado a tabela contas neste momento.")
     else:
