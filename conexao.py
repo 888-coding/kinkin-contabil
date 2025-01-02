@@ -1,1 +1,1 @@
-bancodados_nome = "contabilidade.py"
+bancodados_nome = "contabilidade.db"

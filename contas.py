@@ -28,12 +28,9 @@ def acessarContas():
         print("Escolheu mostrar todas as contas")
         conexao = s.connect(bancodados_nome)
         cursor = conexao.cursor()
-        cursor.execute("SELECT * FROM contas")
+        cursor.execute("SELECT * FROM movimentacoes")
         resultados = cursor.fetchall()
-        if resultados == None:
-            print("Não existe cadastro.")
-        else:
-            print(resultados)
+        print(resultados)
         conexao.close()
 
         #print(resultados)        

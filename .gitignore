@@ -1,5 +1,6 @@
 ./venv
-/__pycache__
+__pycache__/
+*.pyc
 /testes
 contabilidade.db 
 tabela_movimentacoes.txt
