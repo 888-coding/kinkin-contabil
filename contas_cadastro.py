@@ -14,3 +14,5 @@ def tela_do_cadastro():
     complementar = input("Inserir a conta COMPLEMENTAR : ")
     descricao = input("Inserir o nome da Conta      : ")
     print(f"A conta base é {base} , e a conta complementar é {complementar} : {descricao}")
+    #CONTA BASE DEVE SER NUMERO DE ATÉ 4 CASAS.
+    # ... CONTINUAR
