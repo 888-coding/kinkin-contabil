@@ -2,6 +2,7 @@
 import sqlite3 as s
 from conexao import bancodados_nome 
 import contas_buscar_todos
+import contas_cadastro
 
 def acessarContas():
     print("========== CONTAS =========")
@@ -23,8 +24,7 @@ def acessarContas():
 
     # Escolheu uma opção 
     if opcao_menu_contas == 1:
-        print("Escolheu cadastra uma conta")
-                    
+        contas_cadastro.cadastrar()
     elif opcao_menu_contas == 2:
         print("Escolheu mostrar todas as contas")
         contas_buscar_todos.mostratodos()
