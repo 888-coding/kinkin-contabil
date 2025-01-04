@@ -15,4 +15,10 @@ def tela_do_cadastro():
     descricao = input("Inserir o nome da Conta      : ")
     print(f"A conta base é {base} , e a conta complementar é {complementar} : {descricao}")
     #CONTA BASE DEVE SER NUMERO DE ATÉ 4 CASAS.
-    # ... CONTINUAR
+    # ... Não pode ser mais que 9999. 
+
+    if base.isdigit():
+        print("O número base é digito!")
+    else:
+        print("O número base não é digito!")
+    
