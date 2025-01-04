@@ -31,7 +31,4 @@ def mostrarMenu():
     else:
         print(f"Você escolheu a opção {opcao_menu}")
 
-def acessarContas():
-    print("Você está dentro da função acessarConta!")
-
 main()

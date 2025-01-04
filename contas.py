@@ -1,6 +1,7 @@
 # contas.py
 import sqlite3 as s
 from conexao import bancodados_nome 
+import contas_buscar_todos
 
 def acessarContas():
     print("========== CONTAS =========")
@@ -26,14 +27,7 @@ def acessarContas():
                     
     elif opcao_menu_contas == 2:
         print("Escolheu mostrar todas as contas")
-        conexao = s.connect(bancodados_nome)
-        cursor = conexao.cursor()
-        cursor.execute("SELECT * FROM movimentacoes")
-        resultados = cursor.fetchall()
-        print(resultados)
-        conexao.close()
-
-        #print(resultados)        
+        contas_buscar_todos.mostratodos()
     else:
         print("Escolheu atualizar uma conta")
     
