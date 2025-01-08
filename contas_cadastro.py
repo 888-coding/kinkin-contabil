@@ -14,10 +14,10 @@ def tela_do_cadastro():
     while True: 
         base = input("Inserir a Conta BASE         : ")
         if base.isdigit():
-            print("O número base é digito!")
+            print("O número base é dígito!")
             base = int(base)
             if base < 1 or base > 9999 :
-                print("Favor escolher tamanho de 4 digitos.")
+                print("Favor escolher tamanho de 4 dígitos.")
             else:
                 print("Base está correto!!")
                 break
