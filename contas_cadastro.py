@@ -29,10 +29,12 @@ def tela_do_cadastro():
     dados_para_cadastro = [base, complementar, descricao]
     return dados_para_cadastro
 def cadastrar_conta(dados):
-    base = int(dados[0])
+    base = dados[0]
     complementar = dados[1]
     descricao = dados[2]
     conexao = s.connect(bancodados_nome)
+    #print("INSERT INTO contas (conta_base, conta_complementar, conta_descricao) VALUES (" & base & ", '" & complementar & "', '" & descricao & "')")
     cursor = conexao.cursor()
-    cursor.execute("INSERT INTO contas (conta_base, conta_complementar, conta_descricao) VALUES (" & base & ", ")
+    # cursor.execute("INSERT INTO contas (conta_base, conta_complementar, conta_descricao) VALUES (" and base and ", '" and complementar and "', '" and descricao and "')")
+    cursor.execute("INSERT INTO contas(conta_base, conta_complementar, conta_descricao) VALUES (?, ?, ?)", (base, complementar, descricao))
     conexao.commit()
