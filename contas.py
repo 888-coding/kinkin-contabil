@@ -2,7 +2,7 @@
 import sqlite3 as s
 from conexao import bancodados_nome 
 import contas_buscar_todos
-import contas_cadastro
+import contas_cadastro, contas_alterar
 
 def acessarContas():
     print("========== CONTAS =========")
@@ -30,5 +30,6 @@ def acessarContas():
         contas_buscar_todos.mostratodos()
     else:
         print("Escolheu atualizar uma conta")
+        contas_alterar.alterar()
     
 
