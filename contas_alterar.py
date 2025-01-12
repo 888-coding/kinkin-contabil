@@ -18,9 +18,10 @@ def tela_contas_alterar():
     resultados = cursor.fetchall()
     if resultados:
         for resultado in resultados:
-            print(resultado[0])
-            print(resultado[1])
-            print(resultado[2])
+            print(f"id: {resultado[0]}")
+            print(f"Código base: {resultado[1]}")
+            print(f"Código complementar {resultado[2]}")
+            print(" ")
     else:
         print("Não tem resultados")
     cursor.close()
