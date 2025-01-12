@@ -7,6 +7,7 @@ def mostratodos():
     cursor = conexao.cursor()
     cursor.execute("SELECT * FROM contas")
     resultados = cursor.fetchall()
+    cursor.close()
     conexao.close()
     print("Cadastro de contas:")
     print("CODIGO BASE     CODIGO COMPLEMENTAR       DESCRICAO     ")
