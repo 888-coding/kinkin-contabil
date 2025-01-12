@@ -15,7 +15,7 @@ def mostrarMenu():
     while True:
         opcao_menu = input("> Escolha uma opção no menu: ")
         if opcao_menu.isdigit():
-            if int(opcao_menu) < 4 and int(opcao_menu) > 0 :
+            if 4 > int(opcao_menu) > 0:
                 opcao_menu = int(opcao_menu)
                 break
             else:
