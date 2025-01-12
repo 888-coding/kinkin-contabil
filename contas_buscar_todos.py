@@ -8,4 +8,8 @@ def mostratodos():
     cursor.execute("SELECT * FROM contas")
     resultados = cursor.fetchall()
     conexao.close()
-    print(resultados)
+    print("Cadastro de contas:")
+    print("CODIGO BASE     CODIGO COMPLEMENTAR       DESCRICAO     ")
+    for resultado in resultados:
+        print(f"{resultado[1]}   {resultado[2]}            {resultado[3]}")
+
