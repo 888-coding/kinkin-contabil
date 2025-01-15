@@ -4,13 +4,15 @@ from conexao import bancodados_nome
 def alterar():
     dados_consultar = tela_contas_alterar()
     conta_id = consultar_conta(dados_consultar)
-    print("Encontramos a conta !  ")
-    deseja_alterar = input("Deseja alterar ? S/N  : ").upper()
-    if deseja_alterar == "S":
-        print("Voce decidiu alterar")
+    if conta_id == "0":
+        print("Não encontramos a conta.")
     else:
-        print("Você não quer alterar")
-        
+        print("Encontramos a conta !  ")
+        deseja_alterar = input("Deseja alterar ? S/N  : ").upper()
+        if deseja_alterar == "S":
+            print("Voce decidiu alterar")
+        else:
+            print("Você não quer alterar")
 def tela_contas_alterar():
     print(">  Alterar uma conta.")
     print("---------------------")
