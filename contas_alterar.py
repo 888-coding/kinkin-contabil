@@ -22,12 +22,14 @@ def alterar():
             input_descricao = input("Descrição : ").upper()
             cursor.close()
             conexao.close()
+            
         else:
             print("Você não quer alterar")
 def tela_contas_alterar():
-    print(">  Alterar uma conta.")
+    colorama.init()
+    print(Fore.GREEN + ">  Alterar uma conta." + Fore.RESET)
     print("---------------------")
-
+    colorama.deinit()
     print("Qual conta deseja alterar ?")
     base = input("Conta base :  ").upper()
     complementar = input("Conta complementar :  ").upper()
