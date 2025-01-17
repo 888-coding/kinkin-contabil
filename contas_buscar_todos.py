@@ -10,7 +10,30 @@ def mostratodos():
     cursor.close()
     conexao.close()
     print("Cadastro de contas:")
-    print("CODIGO BASE     CODIGO COMPLEMENTAR       DESCRICAO     ")
+    print("CODIGO BASE      CODIGO COMPLEMENTAR  DESCRICAO           ")
     for resultado in resultados:
-        print(f"{resultado[1]}   {resultado[2]}            {resultado[3]}")
+        coluna = 1
+        coluna_maxima = 20
+        for caracter in resultado[1]:
+            print(f"{caracter}", end="")
+            coluna = coluna + 1
+        caracter = ""
+        while coluna != coluna_maxima:
+            print(" ", end="")
+            coluna = coluna + 1
+        coluna = 1
+        for caracter in resultado[2]:
+            print(f"{caracter}", end="")
+            coluna = coluna + 1
+        while coluna != coluna_maxima:
+            print(" ", end="")
+            coluna = coluna + 1
+        coluna = 1
+        for carater in resultado[3]:
+            print(f"{carater}", end="")
+            coluna = coluna + 1
+        while coluna != coluna_maxima:
+            print(" ", end="")
+            coluna = coluna + 1
+        print("")
 
