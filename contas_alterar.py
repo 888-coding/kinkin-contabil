@@ -19,6 +19,7 @@ def alterar():
             cursor.execute("SELECT * FROM contas WHERE conta_id = ?", (conta_id,))
             resultados = cursor.fetchall()
             print(f"Resultado : {resultados[0][1]}.{resultados[0][2]}: {resultados[0][3]}")
+            print(Fore.RED + "Alteração: Somente Descrição é permitida" + Fore.RESET)
             input_descricao = input("Descrição : ").upper()
             cursor.close()
             conexao.close()
