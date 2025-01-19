@@ -1,12 +1,15 @@
 # main.py 
 import contas
-
+import colorama
+from colorama import Fore
 def main():
     mostrarMenu()
 
 def mostrarMenu():
-    print("====== SISTEMA KINKIN CONTÁBIL =====")
-    print("====================================")
+    colorama.init()
+    print(Fore.GREEN + "====== SISTEMA KINKIN CONTÁBIL =====" + Fore.RESET)
+    print(Fore.GREEN + "====================================" + Fore.RESET)
+    colorama.deinit()
     print("MENU DO SISTEMA : ------------------")
     print("1 - ACESSAR CONTAS ")
     print("2 - ACESSAR MOVIMENTAÇÕES ")

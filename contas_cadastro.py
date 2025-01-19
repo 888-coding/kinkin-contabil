@@ -2,6 +2,8 @@
 
 import sqlite3 as s 
 from conexao import bancodados_nome
+import colorama
+from colorama import Fore
 
 def cadastrar():
     dados_para_cadastro = tela_do_cadastro()
@@ -11,8 +13,10 @@ def cadastrar():
     if deseja_cadastrar == "N":
         print("Não foi cadastrado.")
 def tela_do_cadastro():
-    print("Tela de cadastro de Contas : ")
-    # Checar o número Base 
+    colorama.init()
+    print(Fore.GREEN + "Tela de cadastro de Contas : " + Fore.RESET)
+    colorama.deinit()
+    # Checar o número Base
     while True: 
         base = input("Inserir a Conta BASE         : ")
         if base.isdigit():

@@ -1,12 +1,16 @@
 # contas.py
 import sqlite3 as s
-from conexao import bancodados_nome 
+from conexao import bancodados_nome
+import colorama
+from colorama import Fore
 import contas_buscar_todos
 import contas_cadastro, contas_alterar
 
 def acessarContas():
-    print("========== CONTAS =========")
-    print("===========================")
+    colorama.init()
+    print(Fore.GREEN + "========== CONTAS =========" + Fore.RESET)
+    print(Fore.GREEN + "===========================" + Fore.RESET)
+    colorama.deinit()
     print("1. Cadastrar uma conta.")
     print("2. Mostrar todas as contas.")
     print("3. Atualizar uma conta.")

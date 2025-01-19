@@ -1,6 +1,8 @@
 # contas_buscar_todos.py
 import sqlite3 as s
 from conexao import bancodados_nome
+import colorama
+from  colorama import Fore
 
 def mostratodos():
     conexao = s.connect(bancodados_nome)
@@ -9,7 +11,9 @@ def mostratodos():
     resultados = cursor.fetchall()
     cursor.close()
     conexao.close()
-    print("Cadastro de contas:")
+    colorama.init()
+    print(Fore.GREEN + "Lista de todas as contas:" + Fore.RESET)
+    colorama.deinit()
     print("CODIGO BASE      CODIGO COMPLEMENTAR  DESCRICAO           ")
     for resultado in resultados:
         coluna = 1
