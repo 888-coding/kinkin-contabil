@@ -23,7 +23,15 @@ def alterar():
             input_descricao = input("Descrição : ").upper()
             cursor.close()
             conexao.close()
-            
+            conexao = s.connect(bancodados_nome)
+            cursor = conexao.cursor()
+            cursor.execute("UPDATE contas SET conta_descricao = ? WHERE conta_id = ?", (input_descricao, conta_id))
+            conexao.commit()
+            colorama.init()
+            print(Fore.GREEN + "Atualizado com sucesso." + Fore.RESET)
+            colorama.deinit()
+            cursor.close()
+            conexao.close()
         else:
             print("Você não quer alterar")
 def tela_contas_alterar():
