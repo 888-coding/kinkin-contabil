@@ -15,7 +15,7 @@ Nome do banco de dados : "contabilidade.db".
 
 * Será onde ficará as contas que será usado.
 
-* ID, conta_base, conta_complementar, descricao
+* ID, conta_base, conta_complementar, descricao, ativo
 
 * Possívelmente, Não se deve deletar a conta, mas sim a função de Desativar. 
 
