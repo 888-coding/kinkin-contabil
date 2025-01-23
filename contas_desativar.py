@@ -19,7 +19,7 @@ def desativar(conta_id):
     colorama.init()
     print( Fore.GREEN + "Você tem certeza que quer desativar esta conta ? " + Fore.RESET)
     colorama.deinit()
-    print(f"Conta: {resultados[0][1]} . {resultado[0][2]} = {resultados[0][3]}")
+    print(f"Conta: {resultados[0][1]} . {resultados[0][2]} = {resultados[0][3]}")
     deseja_desativar = input("S / N ? ").upper()
 
     # Desativar
