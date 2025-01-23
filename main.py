@@ -1,5 +1,6 @@
 # main.py 
 import contas
+import movimentacoes
 import colorama
 from colorama import Fore
 def main():
@@ -31,6 +32,7 @@ def mostrarMenu():
         contas.acessarContas()
     elif opcao_menu == 2:
         print(f"Você escolheu a opção {opcao_menu}")
+        movimentacoes.acessarMovimentacoes()
     else:
         print(f"Você escolheu a opção {opcao_menu}")
 
