@@ -10,6 +10,9 @@ def TelaCadastrarMovimentacoes():
     # 02 :
     #   02.1 : movimentacoes , passo por passo.
     print("*Para cadastro de movimentacao precisa ter contas cadastradas")
-    dataMovimentacao = input("Informe a data de cadastro no formato DD/MM/AAAA : ")
     # Para data de movimentacao precisa eliminar possíveis erros. 
+    while True:
+        dataMovimentacao = input("Informe a data de cadastro no formato DD/MM/AAAA : ")
+        if len(dataMovimentacao) != 10:
+            print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
 TelaCadastrarMovimentacoes()
