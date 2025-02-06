@@ -2,7 +2,7 @@
 import colorama
 from colorama import Fore
 
-def TelaCadastrarMovimentacoes():
+def DataMovimentacao():
     colorama.init()
     print(Fore.GREEN + "Cadastro de movimentação" + Fore.RESET)
     colorama.deinit()
@@ -38,7 +38,5 @@ def TelaCadastrarMovimentacoes():
             else:
                 break
     return dataMovimentacao
-data_movimentacao = TelaCadastrarMovimentacoes()
-print(data_movimentacao)
-
+data_movimentacao = DataMovimentacao()
 
