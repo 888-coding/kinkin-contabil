@@ -37,7 +37,8 @@ def TelaCadastrarMovimentacoes():
                 print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
             else:
                 break
-TelaCadastrarMovimentacoes()
-
+    return dataMovimentacao
+data_movimentacao = TelaCadastrarMovimentacoes()
+print(data_movimentacao)
 
 
