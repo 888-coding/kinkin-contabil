@@ -15,4 +15,29 @@ def TelaCadastrarMovimentacoes():
         dataMovimentacao = input("Informe a data de cadastro no formato DD/MM/AAAA : ")
         if len(dataMovimentacao) != 10:
             print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
+        else:
+            # 2, 5 = '/'
+            if dataMovimentacao[2] != '/' or dataMovimentacao[5] != '/':
+                print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
+            elif dataMovimentacao[0].isdigit() is False:
+                print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
+            elif dataMovimentacao[1].isdigit() is False:
+                print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
+            elif dataMovimentacao[3].isdigit() is False:
+                print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
+            elif dataMovimentacao[4].isdigit() is False:
+                print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
+            elif dataMovimentacao[6].isdigit() is False:
+                print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
+            elif dataMovimentacao[7].isdigit() is False:
+                print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
+            elif dataMovimentacao[8].isdigit() is False:
+                print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
+            elif dataMovimentacao[9].isdigit() is False:
+                print(Fore.RED + "Favor inserir corretamente!" + Fore.RESET)
+            else:
+                break
 TelaCadastrarMovimentacoes()
+
+
+
