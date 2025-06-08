@@ -6,6 +6,7 @@ import colorama
 from colorama import Fore
 
 def cadastrar():
+    # 登記
     dados_para_cadastro = tela_do_cadastro()
     deseja_cadastrar = verificar_existencia_conta(dados_para_cadastro)
     if deseja_cadastrar == "S":
@@ -13,6 +14,7 @@ def cadastrar():
     if deseja_cadastrar == "N":
         print("Não foi cadastrado.")
 def tela_do_cadastro():
+    # 顯示
     colorama.init()
     print(Fore.GREEN + "Tela de cadastro de Contas : " + Fore.RESET)
     colorama.deinit()
@@ -37,6 +39,7 @@ def tela_do_cadastro():
     return dados_para_cadastro
 
 def verificar_existencia_conta(dados):
+    # 查看有沒有紀錄
     conexao = s.connect(bancodados_nome)
     cursor = conexao.cursor()
     cursor.execute("SELECT * FROM contas WHERE conta_base = ? AND conta_complementar = ?", (dados[0], dados[1]))

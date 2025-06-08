@@ -26,13 +26,16 @@ def acessarContas():
         else:
             print("obs: Escolha uma opção correta!")
 
-    # Escolheu uma opção 
+    # 選擇 
     if opcao_menu_contas == 1:
+        # 選擇登記
         contas_cadastro.cadastrar()
     elif opcao_menu_contas == 2:
+        # 選擇列出全部
         print("Escolheu mostrar todas as contas")
         contas_buscar_todos.mostratodos()
     else:
+        # 選擇更改
         print("Escolheu atualizar uma conta")
         contas_alterar.alterar()
     
