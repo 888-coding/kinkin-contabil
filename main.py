@@ -16,12 +16,13 @@ def mostrarMenu():
     print("1 - ACESSAR CONTAS ")
     print("2 - ACESSAR MOVIMENTAÇÕES ")
     print("3 - ACESSAR RELATÓRIOS ")
+    print("4 - SAIR ")
     print("====================================")
     # 控制不要寫大於4 
     while True:
         opcao_menu = input("> Escolha uma opção no menu: ")
         if opcao_menu.isdigit():
-            if 4 > int(opcao_menu) > 0:
+            if 5 > int(opcao_menu) > 0:
                 opcao_menu = int(opcao_menu)
                 break
             else:
@@ -37,8 +38,10 @@ def mostrarMenu():
         # 選擇了活動
         print(f"Você escolheu a opção {opcao_menu}")
         movimentacoes.acessarMovimentacoes()
-    else:
+    elif opcao_menu == 3:
         # 選擇了報表
         print(f"Você escolheu a opção {opcao_menu}")
+    else:
+        exit()
 
 main()

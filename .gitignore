@@ -6,3 +6,4 @@ contabilidade.db
 tabela_movimentacoes.txt
 .idea/workspace.xml
 .idea/workspace.xml
+__pycache__/**
