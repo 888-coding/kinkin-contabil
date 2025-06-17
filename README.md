@@ -32,3 +32,9 @@ Funcionará via terminal , pelo Python
 * Sistema KinKin é um sistema de balanceamento de Débito e Crédito.  Conhecido também como "Balancete T", ou "Balancete de verificação".
 
 
+## Ano 2025 Mes 6 Dia 17 
+
+Descobri que existe algumas formas de trabalhar com CLI (Command Line)
+
+Existem bibliotecas especificas para usar com terminal. Bibliotecas para controle de tela, e também biblioteca para controle de Tabelas.
+
