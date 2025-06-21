@@ -38,3 +38,6 @@ Descobri que existe algumas formas de trabalhar com CLI (Command Line)
 
 Existem bibliotecas especificas para usar com terminal. Bibliotecas para controle de tela, e também biblioteca para controle de Tabelas.
 
+## Ano 2025 Mes 6 Dia 21 
+
+Decisão, mudar o aplicativo para usar com bibliotecas: Rich e Curses.  Caso tenha mais alguns encontrados, será usado para melhor e facilidade de trabalho.  
