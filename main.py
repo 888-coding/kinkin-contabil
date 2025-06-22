@@ -5,7 +5,6 @@ import colorama
 from colorama import Fore
 def main():
     mostrarMenu()
-
 def mostrarMenu():
     # 建立目錄
     colorama.init()
@@ -18,7 +17,7 @@ def mostrarMenu():
     print("3 - ACESSAR RELATÓRIOS ")
     print("4 - SAIR ")
     print("====================================")
-    # 控制不要寫大於4 
+    # 控制不要寫大於4
     while True:
         opcao_menu = input("> Escolha uma opção no menu: ")
         if opcao_menu.isdigit():
