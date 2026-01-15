@@ -3,20 +3,23 @@ import contas
 import movimentacoes
 import colorama
 from colorama import Fore
+import os 
+
 def main():
     mostrarMenu()
 def mostrarMenu():
     # 建立目錄
+    os.system("cls")
     colorama.init()
     print(Fore.GREEN + "====== SISTEMA KINKIN CONTÁBIL =====" + Fore.RESET)
-    print(Fore.GREEN + "====================================" + Fore.RESET)
+    print("\n")
     colorama.deinit()
     print("MENU DO SISTEMA : ------------------")
     print("1 - ACESSAR CONTAS ")
     print("2 - ACESSAR MOVIMENTAÇÕES ")
     print("3 - ACESSAR RELATÓRIOS ")
     print("4 - SAIR ")
-    print("====================================")
+    print("====================================\n")
     # 控制不要寫大於4
     while True:
         opcao_menu = input("> Escolha uma opção no menu: ")
